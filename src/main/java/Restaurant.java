@@ -63,4 +63,11 @@ public class Restaurant {
         return name;
     }
 
+    public int orderTotal(List <String> selectedItems){
+        int total = 0;
+        if(selectedItems.isEmpty()){
+            return -1;
+        }
+        return total;
+    }
 }

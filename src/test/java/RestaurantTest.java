@@ -71,5 +71,12 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //<<<<<<<<<<<<<<<<<<<<<<<orderTotal>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void orderTotal_should_return_negative1_if_selectedItemNameList_is_empty(){
+        List <String> selectedItemNames = new ArrayList<String>();
+        assertEquals(-1,restaurant.orderTotal(selectedItemNames));
+    }
+    //<<<<<<<<<<<<<<<<<<<<<<<orderTotal>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 }
