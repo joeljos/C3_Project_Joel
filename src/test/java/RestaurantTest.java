@@ -77,6 +77,13 @@ class RestaurantTest {
         List <String> selectedItemNames = new ArrayList<String>();
         assertEquals(-1,restaurant.orderTotal(selectedItemNames));
     }
+    @Test
+    public void orderTotal_should_be_correctly_returned(){
+        List <String> selectedItemNames = new ArrayList<String>();
+        selectedItemNames.add("Sweet corn soup");
+        selectedItemNames.add("Vegetable lasagne");
+        assertEquals(388,restaurant.orderTotal(selectedItemNames));
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<orderTotal>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 }

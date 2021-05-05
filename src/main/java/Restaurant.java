@@ -68,6 +68,9 @@ public class Restaurant {
         if(selectedItems.isEmpty()){
             return -1;
         }
+        for(String itemName:selectedItems){
+            total = total + findItemByName(itemName).getPrice();
+        }
         return total;
     }
 }
